@@ -12,6 +12,8 @@ const Formulario = () => {
     const calcularIMC = () => {
         if (peso === "" || altura === "") {
             setErro("Por favor, preencha todos os campos.");
+            setImc("");
+            setClassificacao("");
             return;
         }
 
